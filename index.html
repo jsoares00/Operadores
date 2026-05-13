@@ -3,40 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site do Timão</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fonte sugerida para um visual esportivo -->
+    <title>Corinthians - O Clube do Povo</title>
+    <!-- Fonte esportiva -->
     <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        /* CSS INTEGRADO */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 4px solid #333;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 60px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #ccc;
+        }
+
+        /* Banner Principal (Hero) */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://trrsf.com') 
+                        no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 5rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-timao {
+            background-color: #fff;
+            color: #000;
+            padding: 12px 30px;
+            border: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .btn-timao:hover {
+            background-color: #000;
+            color: #fff;
+            outline: 2px solid #fff;
+        }
+
+        /* Seção de Fotos */
+        .content-section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            border-bottom: 5px solid #000;
+            display: inline-block;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .image-card {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .image-card p {
+            margin-top: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #000;
+            color: #888;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Navegação -->
     <header class="navbar">
-        <div class="logo">CORINTHIANS</div>
+        <div class="logo-container">
+            <img src="https://wikimedia.org" alt="Escudo" class="logo-img">
+            <span>S.C. CORINTHIANS</span>
+        </div>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">História</a></li>
+                <li><a href="#">Arena</a></li>
                 <li><a href="#">Títulos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#">Fiel Torcida</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Banner Principal -->
     <section class="hero">
         <div class="hero-content">
             <h1>VAI CORINTHIANS!</h1>
-            <p>Seja bem-vindo ao portal do Bando de Loucos.</p>
-            <button class="btn-timao">Saiba Mais</button>
+            <p>Onde houver uma camisa preta e branca, haverá um corinthiano.</p>
+            <button class="btn-timao">Ver Elenco</button>
         </div>
     </section>
 
-    <section class="info">
-        <h2>Tradição e Glória</h2>
-        <p>Desde 1910, o clube do povo representando o orgulho paulista.</p>
+    <!-- Galeria de Imagens -->
+    <section class="content-section">
+        <h2>Nossa Identidade</h2>
+        <div class="image-grid">
+            
+            <div class="image-card">
+                <img src="https://meutimao.com.br" alt="Torcida">
+                <p>A Fiel Torcida</p>
+            </div>
+
+            <div class="image-card">
+                <img src="https://ytimg.com" alt="Escudo no campo">
+                <p>Tradição desde 1910</p>
+            </div>
+
+            <div class="image-card">
+                <img src="https://imguol.com.br" alt="Arena">
+                <p>Casa do Povo</p>
+            </div>
+
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 - Criado por um Corinthiano roxo.</p>
+        <p>Desenvolvido por um membro do Bando de Loucos &copy; 2024</p>
     </footer>
 
 </body>
