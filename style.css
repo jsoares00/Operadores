@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+}
+
+/* Cabeçalho */
+.navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #333;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ccc;
+}
+
+/* Seção Principal (Hero) */
+.hero {
+    height: 60vh;
+    /* Imagem da Arena como fundo */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://trrsf.com') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.btn-timao {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-timao:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Conteúdo */
+.info {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+.hero {
+    height: 60vh;
+    /* Imagem da Arena como fundo */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://trrsf.com') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
